@@ -18,9 +18,9 @@ const AppcuesRouter = () => {
     <div>
       <Navigation />
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
+        <Route exact path="/basic_demo/" component={Home} />
+        <Route path="/basic_demo/about" component={About} />
+        <Route path="/basic_demo/contact" component={Contact} />
       </Switch>
       <div id="appcues_launchpad"></div> 
     </div>
