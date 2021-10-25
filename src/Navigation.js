@@ -3,15 +3,17 @@ import { Link } from "react-router-dom";
 
 const Navigation = () => (
   <div>
-    <div iid="left_nav">
-      <Link to="/">Home</Link>
+    <div id="left_nav">
+      <Link to="/basic_demo/">Home</Link>
       {" - "}
-      <Link to="/about">About</Link>
+      <Link to="/basic_demo/about">About</Link>
       {" - "}
-      <Link to="/contact">Contact Us</Link>
+      <Link to="/basic_demo/contact">Contact Us</Link>
     </div>
     <div id="right_nav">
-      <p>Settings</p>
+      <Link to="/basic_demo/settings">Settings</Link>
+      {" - "}
+      <Link to="/basic_demo/login">Login</Link>
     </div>
   </div>
 );
