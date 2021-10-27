@@ -7,6 +7,8 @@ import Contact from "./Contact";
 import Navigation from "./Navigation";
 import Login from "./Login";
 import Settings from "./Settings";
+import Toolbar from "./appcues_components/Toolbar";
+
 
 const AppcuesRouter = () => {
     const location = useLocation();
@@ -26,6 +28,7 @@ const AppcuesRouter = () => {
         <Route path="/basic_demo/login" component={Login} />
         <Route path="/basic_demo/settings" component={Settings} />
       </Switch>
+      <Toolbar />
       <div id="appcues_launchpad"></div> 
     </div>
   )
