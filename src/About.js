@@ -1,4 +1,6 @@
 import React from "react";
+import ContentTrigger from "./appcues_components/ContentTrigger";
+import EventLog from "./appcues_components/EventLog";
 
 const About = () => {
   return (
@@ -13,6 +15,9 @@ const About = () => {
         <li>3. ???</li>
         <li>4. profit</li>
       </ul>
+
+      <ContentTrigger/>
+      <EventLog/>
     </div>
   );
 };
