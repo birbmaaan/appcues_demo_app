@@ -1,6 +1,7 @@
 import React from "react";
 import ContentTrigger from "./appcues_components/ContentTrigger";
 import EventLog from "./appcues_components/EventLog";
+import Toolbar from "./appcues_components/Toolbar";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <ContentTrigger/>
       <EventLog/>
 
+      <Toolbar/>
     </div>
   );
 };

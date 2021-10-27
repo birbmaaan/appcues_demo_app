@@ -1,8 +1,9 @@
 import React from "react";
 
 const identify_user = () => {
-  const user_id = document.getElementById('input_id_field').value;
-  window.Appcues.identify(user_id);
+  const user_id = document.getElementById('input_id_field');
+  window.Appcues.identify(user_id.value);
+  user_id.value = '';
 }
 
 const AppcuesIdentifier = () => {
