@@ -1,6 +1,6 @@
 import React from "react";
 import ContentTrigger from "./appcues_components/ContentTrigger";
-import EventLog from "./appcues_components/EventLog";
+// import EventLog from "./appcues_components/EventLog";
 
 const About = () => {
   return (
@@ -17,7 +17,7 @@ const About = () => {
       </ul>
 
       <ContentTrigger/>
-      <EventLog/>
+      {/* <EventLog/> */}
     </div>
   );
 };
