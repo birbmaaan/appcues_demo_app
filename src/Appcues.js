@@ -22,11 +22,11 @@ const AppcuesRouter = () => {
     <div>
       <Navigation />
       <Switch>
-        <Route exact path="/basic_demo/" component={Home} />
-        <Route path="/basic_demo/about" component={About} />
-        <Route path="/basic_demo/contact" component={Contact} />
-        <Route path="/basic_demo/login" component={Login} />
-        <Route path="/basic_demo/settings" component={Settings} />
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/login" component={Login} />
+        <Route path="/settings" component={Settings} />
       </Switch>
       <Toolbar />
       <div id="appcues_launchpad"></div> 

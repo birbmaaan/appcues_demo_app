@@ -22,6 +22,10 @@ const show_flow = () => {
   flow_id.value = '';
 }
 
+const open_debugger = () => {
+    window.Appcues.debug();
+}
+
 const Toolbar = () => {
 
     return (
@@ -33,9 +37,10 @@ const Toolbar = () => {
                 <input id="show_flow" type="text"/>
                 <button onClick={show_flow}>Launch Flow</button>
             </li>
-            <li><button onClick={clear_show}>Click me to clear a shown checklist</button></li>
-            <li><button onClick={anonymous_user}>Click me to create an anonymous user</button></li>
-            <li><button onClick={reset_appcues}>Click me to reset this Appcues session</button></li>
+            <li><button onClick={clear_show}>Clear a checklist</button></li>
+            <li><button onClick={anonymous_user}>Create an anonymous user</button></li>
+            <li><button onClick={reset_appcues}>Reset this Appcues session</button></li>
+            <li><button onClick={open_debugger}>Open the debugger</button></li>
             </ul>
             {/* <EventLog /> */}
         </div>
