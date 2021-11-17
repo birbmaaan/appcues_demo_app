@@ -29,7 +29,7 @@ const open_debugger = () => {
 const Toolbar = () => {
 
     return (
-        <div>
+        <div id="toolbar">
             <h2>The Appcues Toolbox</h2>
             <ul>
             <li>

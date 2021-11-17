@@ -13,3 +13,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#main-app {
+  display: flex;
+}
+
+#navigation {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#navigation a {
+  padding-top: 5px;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+
+#navigation a:hover {
+  color: grey;
+}
+
+#launchpad {
+  padding-top: 5px;
+}
+
+#main-app > div:nth-child(2) {
+  background-color: royalblue;
+  width: 60%;
+  padding: 10px;
+}
+
+#toolbar {
+  width: 30%;
+  padding: 10px;
+}

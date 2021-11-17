@@ -11,16 +11,15 @@ import Toolbar from "./appcues_components/Toolbar";
 
 
 const AppcuesRouter = () => {
-  const location = useLocation();
+  const location = useLocation(); //installation using React hooks
 
   useEffect(() => {
     window.Appcues.page();
   }, [location]);
 
   return (
-    <div>
+    <div id="main-app">
       <Navigation />
-      <div id="launchpad"></div> 
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
