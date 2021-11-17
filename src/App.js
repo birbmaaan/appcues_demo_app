@@ -12,7 +12,6 @@ const App = () => {
   })
 
   window.Appcues.on("all", function(e, a) {
-    // console.log('the current_name is ' + curren);
     console.log(e);
     console.log(a);
 
