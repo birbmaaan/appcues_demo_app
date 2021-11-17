@@ -11,16 +11,16 @@ import Toolbar from "./appcues_components/Toolbar";
 
 
 const AppcuesRouter = () => {
-    const location = useLocation();
+  const location = useLocation();
 
-    useEffect(() => {
-      window.Appcues.page();
-    }, [location]);
-
+  useEffect(() => {
+    window.Appcues.page();
+  }, [location]);
 
   return (
     <div>
       <Navigation />
+      <div id="launchpad"></div> 
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
@@ -29,7 +29,6 @@ const AppcuesRouter = () => {
         <Route path="/settings" component={Settings} />
       </Switch>
       <Toolbar />
-      <div id="appcues_launchpad"></div> 
     </div>
   )
 };

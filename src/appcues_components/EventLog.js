@@ -8,7 +8,6 @@ function EventLog() {
     }
   }
 
-  
   return (
     <div>
       <button onClick={clear_log}>Clear All Events</button>
