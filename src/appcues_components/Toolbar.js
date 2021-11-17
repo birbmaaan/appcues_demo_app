@@ -1,6 +1,6 @@
 import React from "react";
 
-// import EventLog from "./EventLog";
+import { EventLog } from "./EventLog";
 
 
 const reset_appcues = () => {
@@ -42,7 +42,7 @@ const Toolbar = () => {
             <li><button onClick={reset_appcues}>Reset this Appcues session</button></li>
             <li><button onClick={open_debugger}>Open the debugger</button></li>
             </ul>
-            {/* <EventLog /> */}
+            <EventLog />
         </div>
     )
 }
