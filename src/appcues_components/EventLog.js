@@ -31,7 +31,6 @@ function log_events(name, payload) { // function to log Appcues events on the pa
 
   events_log.appendChild(event_name); // add the name onto the page
   events_log.appendChild(event_data); // add the payload onto the page
-  const parsed = parse_data(event_data);
 }
 
 const parse_data = (data) => {
