@@ -33,8 +33,8 @@ const Toolbar = () => {
             <h2>The Appcues Toolbox</h2>
             <ul>
             <li>
-                <p>Enter flow ID to launch it on this page</p>
-                <input id="show_flow" type="text"/>
+                <h3>Enter ID and click "Launch Flow" to launch Appcues content</h3>
+                <input placeholder="-AbCdEf-12345" id="show_flow" type="text"/>
                 <button onClick={show_flow}>Launch Flow</button>
             </li>
             <li><button onClick={clear_show}>Clear a checklist</button></li>

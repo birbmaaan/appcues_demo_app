@@ -17,7 +17,9 @@ const App = () => {
     log_events(name, payload);
   })
 
-  window.Appcues.loadLaunchpad("#launchpad")
+  window.Appcues.loadLaunchpad("#launchpad", {
+    position: "right"
+  })
   
   return (
     <BrowserRouter>
