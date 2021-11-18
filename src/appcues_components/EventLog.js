@@ -11,8 +11,8 @@ function EventLog() {
   return (
     <div>
       <h2>Event Log</h2>
-      <button onClick={clear_log}>Clear All Events</button>
       <ol id="events_log"></ol>
+      <button onClick={clear_log}>Clear All Events</button>
     </div>
   )
 
@@ -23,8 +23,7 @@ function log_events(name, payload) { // function to log Appcues events on the pa
   const event_name = document.createElement('li'); // create a list element for the event name
   const event_data = document.createElement('p'); // create a paragraph element for the event payload
 
-  const payload_str = JSON.stringify(payload); // change the object into a flattened string
-  const parse_str = parse_data(payload_str);
+  const parse_str = parse_data(payload); // format the event data into HTML-readable
 
   event_name.innerHTML = (name); // add the event name to the HTML element
   event_data.innerHTML = (parse_str); // add the stringified event payload
@@ -34,21 +33,11 @@ function log_events(name, payload) { // function to log Appcues events on the pa
 }
 
 const parse_data = (data) => {
-  // const separators = ":,{}";
-  // let split = "";
-
-  // data.split("").forEach(el => {
-  //   split += el
-  //   if (separators.indexOf(el) >= 0) {
-  //     split += " ";
-  //   }
-  // });
-
-  // return split;
-  let parsed = '';
+  let data_array = JSON.stringify(data).split('');
+  let parsed = "";
   let indent = "";
 
-  data.split('').forEach(char => {
+  data_array.forEach(char => {
     if (char === "{") {
       indent += "&nbsp;&nbsp;&nbsp;&nbsp;"
       parsed += char + "<br>" + indent;

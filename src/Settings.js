@@ -2,7 +2,7 @@ import React from "react";
 
 const Settings = () => {
   return (
-    <div>
+    <div className="app-content">
       <h1>Change your app's settings here</h1>
       <p>Password</p>
       <select defaultValue="Select one" >
