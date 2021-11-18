@@ -65,10 +65,19 @@ input {
   color: grey;
 }
 
+/* Appcues Launchpad styling */
+
 #launchpad {
   padding-top: 5px;
   text-align: end;
 }
+
+.appcues-widget-dropdown {
+  border-radius: 5px;
+}
+
+
+/* Main app styling */
 
 #main-app > div:nth-child(2) {
   background-color: royalblue;
