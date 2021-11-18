@@ -34,17 +34,37 @@ function log_events(name, payload) { // function to log Appcues events on the pa
 }
 
 const parse_data = (data) => {
-  const separators = ":,{}";
-  let split = "";
+  // const separators = ":,{}";
+  // let split = "";
 
-  data.split("").forEach(el => {
-    split += el
-    if (separators.indexOf(el) >= 0) {
-      split += " ";
+  // data.split("").forEach(el => {
+  //   split += el
+  //   if (separators.indexOf(el) >= 0) {
+  //     split += " ";
+  //   }
+  // });
+
+  // return split;
+  let parsed = '';
+  let indent = "";
+
+  data.split('').forEach(char => {
+    if (char === "{") {
+      indent += "&nbsp;&nbsp;&nbsp;&nbsp;"
+      parsed += char + "<br>" + indent;
+    } else if (char === "}") {
+      indent = indent.substring(24);
+      parsed += "<br>" + indent + char;
+    } else if (char === ",") {
+      parsed += char + "<br>" + indent;
+    } else if (char === ":") {
+      parsed += char + " ";
+    } else {
+      parsed += char;
     }
-  });
+  })
 
-  return split;
+  return parsed;
 }
 
 export {
