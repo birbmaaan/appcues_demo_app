@@ -1,5 +1,9 @@
 import React from 'react';
 
+/*
+  This component allows you to launch Appcues content
+*/
+
 const show_flow = () => {
   const flow_id = document.getElementById("show_flow");
   const flow_id_str = flow_id.value;

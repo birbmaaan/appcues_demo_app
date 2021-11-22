@@ -1,5 +1,10 @@
 import React from "react";
 
+/*
+  This component allows you to identify with any user ID you would like
+*/
+
+
 const identify_user = () => {
   const user_id = document.getElementById('input_id_field');
   window.Appcues.identify(user_id.value);

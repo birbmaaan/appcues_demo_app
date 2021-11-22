@@ -176,3 +176,9 @@ input {
   color: #66FF66;
   margin-left: 5px;
 }
+
+/* custom Appcues styling */
+
+appcues-container:not(.fullscreen)[data-pattern-type='shorty'][data-position^='bottom'] {
+  bottom: 0px !important;
+}

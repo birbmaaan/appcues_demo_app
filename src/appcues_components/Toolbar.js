@@ -1,6 +1,9 @@
 import React from "react";
-
 import { EventLog } from "./EventLog";
+
+/*
+  This toolbar contains the Appcues javacript API calls useful for debugging and testing
+*/
 
 
 const reset_appcues = () => {
@@ -17,8 +20,7 @@ const anonymous_user = () => {
 
 const show_flow = () => {
   const flow_id = document.getElementById("show_flow");
-  const flow_id_str = flow_id.value;
-  window.Appcues.show(flow_id_str);
+  window.Appcues.show(flow_id.value);
   flow_id.value = '';
 }
 
@@ -27,7 +29,6 @@ const open_debugger = () => {
 }
 
 const Toolbar = () => {
-
     return (
         <div id="toolbar">
             <h2>The Appcues Toolbox</h2>

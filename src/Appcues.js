@@ -9,9 +9,14 @@ import Login from "./Login";
 import Settings from "./Settings";
 import Toolbar from "./appcues_components/Toolbar";
 
+/* 
+This component is wrapped around all the path changes in the app, which then
+allows Appcues.page to be called every time the path changes. If you want to add any 
+new components to the app, you'll want to include them as a <Route> as seen below.
+*/
 
 const AppcuesRouter = () => {
-  const location = useLocation(); //installation using React hooks
+  const location = useLocation(); // installation using React hooks
 
   useEffect(() => {
     window.Appcues.page();
@@ -32,4 +37,4 @@ const AppcuesRouter = () => {
   )
 };
 
-export default AppcuesRouter;
+export default AppcuesRouter; // This needs to be wrapped by an additional router to function properly. In this app, this is done in App.js

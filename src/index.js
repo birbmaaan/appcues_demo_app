@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
-console.log("I can't let you do that.")
+ 
 ReactDOM.render(<App />, document.getElementById('root'));
+
+// This attaches the actual working app from App.js onto the HTML element in the index.html file
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -9,3 +9,10 @@ This project was created using the [create-react-app](https://github.com/faceboo
 ### Tip: Use React Router
 
 We recommend leveraging a library like [`react-router`](https://github.com/ReactTraining/react-router) to easily hook into things like route changes.
+
+### 
+
+Notes:
+1. This is a frontend-only app, which means no data will persist across sessions. The user ID has been hard-coded into the Appcues.identify call, which means on refresh, the identified user will revert to whatever value has been entered here.
+
+However, if there is a particular user ID you would like to use, entering that ID in the login bar will change the user until there is a page refresh.
