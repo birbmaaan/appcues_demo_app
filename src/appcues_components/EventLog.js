@@ -1,7 +1,7 @@
 import React from "react";
 
 /*
-  This component logs all Appcues events on the page. The log_eventts is defined
+  This component logs all Appcues events on the page. The log_events is defined
   here, but actually invoked in App.js, where the Appcues.on listener is defined.
 */
 
