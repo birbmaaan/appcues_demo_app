@@ -43,7 +43,7 @@ input {
 
 /* Nav bar */
 #navigation {
-  width: 10%;
+  width: 75px;
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -86,7 +86,7 @@ input {
 
 .app-content {
   background-color: rgb(169, 203, 226);
-  width: 60%;
+  width: calc(70% - 75px);
   padding: 10px;
   color:rgb(0, 8, 63)
 }

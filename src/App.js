@@ -14,6 +14,7 @@ like Appcues.on so they will be called every time the app is loaded.
 const App = () => { 
   window.Appcues.identify("testUser", { 
     role: "tester",
+    currentHour: 7,
   })
 
   window.Appcues.on("all", function(name, payload) {
