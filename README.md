@@ -81,7 +81,7 @@ You now have a working app, but it's currently only on your machine. Next you'll
 
 When working in the terminal, you'll want to make sure you're in your demo project folder. If you're running a local server for local host, I recommend opening a second terminal for pushing changes to Github.
 
-Following the [directions](https://docs.github.com/en/get-started/quickstart/create-a-repo) on Github, create a new repository to hold your demo app's files. You'll want to follow the steps for pushing an existing repository from the command line.
+Following the [directions](https://docs.github.com/en/get-started/quickstart/create-a-repo) on Github, create a new repository to hold your demo app's files. You don't need to create a new README or gitignore. You'll want to follow the steps for pushing an existing repository from the command line.
 
 If you receive `error: remote origin already exists.`, you'll first need to change the origin by running the command `git remote set-url origin <remote_url>`. The remote_url should be your Github repository URL.
 
