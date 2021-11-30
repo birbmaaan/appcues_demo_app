@@ -7,42 +7,42 @@ import React from "react";
 
 
 function EventLog() {
-  const clear_log = () => { // removes all listed events in the event log
-    const events_log = document.getElementById('events_log');
-    while (events_log.firstChild) {
-      events_log.removeChild(events_log.firstChild);
+  const clearLog = () => { // removes all listed events in the event log
+    const eventsLog = document.getElementById('events-log');
+    while (eventsLog.firstChild) {
+      eventsLog.removeChild(eventsLog.firstChild);
     }
   }
 
   return (
     <div>
       <h2>Event Log</h2>
-      <ol id="events_log"></ol>
-      <button onClick={clear_log}>Clear All Events</button>
+      <ol id="events-log"></ol>
+      <button onClick={clearLog}>Clear All Events</button>
     </div>
   )
 
 }
 
-function log_events(name, payload) { // function to log Appcues events on the page
-  const events_log = document.getElementById('events_log'); // get the event log HTML element from the page
-  const event_name = document.createElement('li'); // create a list element for the event name
-  const event_data = document.createElement('p'); // create a paragraph element for the event payload
+function logEvents(name, payload) { // function to log Appcues events on the page
+  const eventsLog = document.getElementById('events-log'); // get the event log HTML element from the page
+  const eventName = document.createElement('li'); // create a list element for the event name
+  const eventData = document.createElement('p'); // create a paragraph element for the event payload
 
-  const parse_str = parse_data(payload); 
-  event_name.innerHTML = (name); // add the event name to the HTML element
-  event_data.innerHTML = (parse_str); // add the stringified event payload
+  const parseStr = parseData(payload); 
+  eventName.innerHTML = (name); // add the event name to the HTML element
+  eventData.innerHTML = (parseStr); // add the stringified event payload
 
-  events_log.appendChild(event_name); // add the name onto the page
-  events_log.appendChild(event_data); // add the payload onto the page
+  eventsLog.appendChild(eventName); // add the name onto the page
+  eventsLog.appendChild(eventData); // add the payload onto the page
 }
 
-const parse_data = (data) => { // function to format event data into HTML-readable format
-  let data_array = JSON.stringify(data).split('');
+const parseData = (data) => { // function to format event data into HTML-readable format
+  let dataArray = JSON.stringify(data).split('');
   let parsed = "";
   let indent = "";
 
-  data_array.forEach(char => {
+  dataArray.forEach(char => {
     if (char === "{") {
       indent += "&nbsp;&nbsp;&nbsp;&nbsp;"
       parsed += char + "<br>" + indent;
@@ -62,6 +62,6 @@ const parse_data = (data) => { // function to format event data into HTML-readab
 }
 
 export {
-  log_events,
+  logEvents,
   EventLog,
 }

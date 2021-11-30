@@ -6,25 +6,27 @@ import { EventLog } from "./EventLog";
 */
 
 
-const reset_appcues = () => {
+const resetAppcues = () => { // resets the session and removes user information from local storage
     window.Appcues.reset();
+    window.localStorage.removeItem("currentUser");
+    window.localStorage.removeItem("timestamp");
 }
 
-const clear_show = () => {
+const clearShow = () => {
     window.Appcues.clearShow();
 }
 
-const anonymous_user = () => {
+const anonymousUser = () => {
     window.Appcues.anonymous();
 }
 
-const show_flow = () => {
-  const flow_id = document.getElementById("show_flow");
-  window.Appcues.show(flow_id.value);
-  flow_id.value = '';
+const showFlow = () => {
+  const flowId = document.getElementById("show-flow");
+  window.Appcues.show(flowId.value);
+  flowId.value = '';
 }
 
-const open_debugger = () => {
+const openDebugger = () => {
     window.Appcues.debug();
 }
 
@@ -35,13 +37,13 @@ const Toolbar = () => {
             <ul>
             <li>
                 <h3>Enter ID and click "Appcues.show" to launch Appcues content</h3>
-                <input placeholder="-AbCdEf-12345" id="show_flow" type="text"/>
-                <button onClick={show_flow}>Appcues.show()</button>
+                <input placeholder="-AbCdEf-12345" id="show-flow" type="text"/>
+                <button onClick={showFlow}>Appcues.show()</button>
             </li>
-            <li><button onClick={clear_show}>Appcues.clear()</button></li>
-            <li><button onClick={anonymous_user}>Appcues.anonymous()</button></li>
-            <li><button onClick={open_debugger}>Appcues.debug()</button></li>
-            <li><button onClick={reset_appcues}>Appcues.reset()</button></li>
+            <li><button onClick={clearShow}>Appcues.clear()</button></li>
+            <li><button onClick={anonymousUser}>Appcues.anonymous()</button></li>
+            <li><button onClick={openDebugger}>Appcues.debug()</button></li>
+            <li><button onClick={resetAppcues}>Appcues.reset()</button></li>
             </ul>
             <EventLog />
         </div>
