@@ -53,19 +53,23 @@ Note: you will first need to install Appcues using your account ID in the first 
 
 And that's it! You've now got a locally hosted working app. Any changes you make in your code files should automatically appear in the local version of your demo app.
 
-## Install your Appcues account
+## Personalize app
 
-### 1. 
+### 1. Set Appcues account ID
+
 In the `index.html` file, replace {account_id} with your Appcues 
 account ID.
 
-### 2. 
+### 2. Set user ID 
+
 In `App.js`, replace the "tesUser" ID if you'd like, and add in any other user properties you would like sent into Appcues. Because this demo app does not have a backend with a database, whenever you refresh the page in your app, the identified user will fall back to whatever value is entered here.
 
-### 3. 
+### 3. Personalize app content
+
 Feel free to add any additional HTML you would like. This should mostly be done with HTML added into the `return` section of any component. You can add in anything like photos, iFrames, lists, etc. You can also create entirely new components if you're feeling adventurous.
 
-### 4. 
+### 4. Add CSS
+
 The app's CSS lives in `index.css` and can be changed as you please. 
 
 I recommend leaving alone the files in the `appcues_components` folder, as these are what are used for making calls to the Appcues javascript API and running the event log.
