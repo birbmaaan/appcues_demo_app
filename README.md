@@ -1,6 +1,3 @@
-# Project Introduction
-
-
 # Directions for using this demo app
 
 In order to work with this app, you'll do most of your work from your computer's terminal. If you're unfamiliar with the terminal, [this article](https://itconnect.uw.edu/learn/workshops/online-tutorials/web-publishing/what-is-a-terminal/) gives a quick rundown. For basic terminal commands, check out [This Tech Republic article](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/). cd and ls are particularly useful.
