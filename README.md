@@ -1,7 +1,7 @@
-### Project Introduction
+# Project Introduction
 
 
-### Directions for using this demo app
+# Directions for using this demo app
 
 In order to work with this app, you'll do most of your work from your computer's terminal. If you're unfamiliar with the terminal, [this article](https://itconnect.uw.edu/learn/workshops/online-tutorials/web-publishing/what-is-a-terminal/) gives a quick rundown. For basic terminal commands, check out [This Tech Republic article](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/). cd and ls are particularly useful.
 
@@ -72,7 +72,7 @@ Feel free to add any additional HTML you would like. This should mostly be done 
 
 The app's CSS lives in `index.css` and can be changed as you please. 
 
-I recommend leaving alone the files in the `appcues_components` folder, as these are what are used for making calls to the Appcues javascript API and running the event log.
+Note: I recommend leaving alone the files in the `appcues_components` folder, as these are what are used for making calls to the Appcues javascript API and running the event log.
 
 ## Push project to Github
 
@@ -80,6 +80,7 @@ You now have a working app, but it's currently only on your machine. Next you'll
 
 When working in the terminal, you'll want to make sure you're in your demo project folder. If you're running a local server for local host, I recommend opening a second terminal for pushing changes to Github.
 
+### Create your Github repository
 Following the [directions](https://docs.github.com/en/get-started/quickstart/create-a-repo) on Github, create a new repository to hold your demo app's files. You don't need to create a new README or gitignore. You'll want to follow the steps for pushing an existing repository from the command line.
 
 If you receive `error: remote origin already exists.`, you'll first need to change the origin by running the command `git remote set-url origin <remote_url>`. The remote_url should be your Github repository URL.
