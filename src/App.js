@@ -12,9 +12,14 @@ like Appcues.on so they will be called every time the app is loaded.
 */
 
 const App = () => { 
-  window.Appcues.identify("testUser", { 
+  const user_id = window.localStorage.current_user || "testUser";
+
+  const current_time = Date.now();
+
+  window.Appcues.identify(user_id, { // feel free to add in any user properties here
     role: "tester",
-    currentHour: 7,
+    test_property: "some value",
+    signup_date: current_time
   })
 
   window.Appcues.on("all", function(name, payload) {

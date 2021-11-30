@@ -8,6 +8,7 @@ import { EventLog } from "./EventLog";
 
 const reset_appcues = () => {
     window.Appcues.reset();
+    window.localStorage.removeItem("current_user");
 }
 
 const clear_show = () => {
