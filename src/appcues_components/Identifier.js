@@ -4,35 +4,22 @@ import React from "react";
   This component allows you to identify with any user ID you would like
 */
 
-const identify_user = () => {
-  
-  const new_id = document.getElementById('input_id_field');
-  window.localStorage.setItem("current_user", new_id.value);
-  window.Appcues.identify(new_id.value);
-  new_id.value = '';
-  
+const identifyUser = () => {
+  const newId = document.getElementById('input-id-field');
+
+  window.localStorage.setItem("currentUser", newId.value); // sets new ID to persist across refresh
+  window.Appcues.identify(newId.value); // identifies user with new value
+
+  newId.value = ''; // resets text input field
 }
 
 export default function AppcuesIdentifier() {
 
-  // const [current_user,  setUser] = useState('testUser');
-
-  // useEffect(() => {
-  //   setUser(JSON.parse(window.localStorage.getItem('current_user')));
-  // }, []);
-
-  // useEffect(() => {
-  //   window.localStorage.setItem('current_user', current_user);
-  // }, [current_user]);
-
-
     return (
         <div>
           <h2>Enter test user ID</h2>
-            <input id="input_id_field" type="text"/>
-            <button onClick={identify_user}>Log me in</button>
+            <input id="input-id-field" type="text"/>
+            <button onClick={identifyUser}>Log me in</button>
         </div>
     )
 }
-
-// export default AppcuesIdentifier;

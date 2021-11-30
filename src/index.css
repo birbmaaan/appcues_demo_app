@@ -156,7 +156,7 @@ input {
   height: 5%;
 }
 
-#events_log {
+#events-log {
   background-color: #282828;
   border: inset;
   border-radius: 5px;
@@ -164,7 +164,7 @@ input {
   overflow: scroll;
 }
 
-#events_log li {
+#events-log li {
   margin-left: 40px;
   font-weight: 700;
   padding-top: 5px;
@@ -172,7 +172,7 @@ input {
   color: #FFB000;
 }
 
-#events_log p {
+#events-log p {
   color: #66FF66;
   margin-left: 5px;
 }
