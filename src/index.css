@@ -39,6 +39,15 @@ button:hover {
 
 input {
   padding: 5px;
+  margin: 5px 0;
+}
+
+img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
 }
 
 /* Nav bar */
@@ -88,7 +97,11 @@ input {
   background-color: rgb(169, 203, 226);
   width: calc(70% - 75px);
   padding: 10px;
-  color:rgb(0, 8, 63)
+  color:rgb(0, 8, 63);
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .app-content button {
@@ -102,6 +115,40 @@ input {
   background-color: rgb(205, 205, 254);
 }
 
+.app-content p {
+  padding: 5px 0;
+  width: 60%;
+  line-height: 1.2em;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-content ol {
+  padding: 5px 0px;
+  font-weight: 700;
+}
+
+.app-content li {
+  margin-left: 20px;
+  padding: 2px 5px;
+  font-weight: 500;
+}
+
+.app-content h1, .app-content h2 {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.property-setter {
+  display:  flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.property-setter > * {
+  width: 250px;
+}
 
 /* Appcues Toolbar */
 

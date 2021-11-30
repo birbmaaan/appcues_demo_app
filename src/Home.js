@@ -1,4 +1,5 @@
 import React from "react";
+import squirrel from "./resources/squirrel.jpg"
 
 /* 
   feel free to add/remove any HTML you would like. Just remember that all content
@@ -8,8 +9,9 @@ import React from "react";
 const Home = () => {
   return (
     <div className="app-content">
-      <h1>Welcome to this feature-rich test application.</h1>
-      <p>Photo gallery</p>
+      <h1>Welcome to this feature-rich test application</h1>
+      <h2>We're glad you're here</h2>
+      <img src={squirrel}></img>
     </div>
   );
 };

@@ -10,13 +10,16 @@ const Contact = () => {
     <div className="app-content">
       <h1>Contact Us</h1>
       <p>
-        You can email us at{" "}
-        <a href="mailto:notarealemail@appcues.com">notarealemail@appcues.com</a>
+        If you have any questions about this app, feel free to reach out to Elijah through{" "}
+        <a href="mailto:elijah@appcues.com">email</a> or through Slack.
       </p>
-      <h2>Other ways to contact:</h2>
+      <h2>Other resources:</h2>
       <p>
-        For more ways to contact us, check out our blog at <a href="https://blog.notarealblog.com">blog.notarealblog.com</a>
+        For any questions about Appcues, check out <a href="https://appcues.com">Appcues.com</a>
       </p>
+      <p>
+        <a href="https://docs.appcues.com/">The Appcues docs</a> are also a great resource.  
+      </p>      
     </div>
   );
 };
