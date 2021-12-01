@@ -2,6 +2,8 @@
 
 In order to work with this app, you'll do most of your work from your computer's terminal. If you're unfamiliar with the terminal, [this article](https://itconnect.uw.edu/learn/workshops/online-tutorials/web-publishing/what-is-a-terminal/) gives a quick rundown. For basic terminal commands, check out [this Tech Republic article](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/). The commands **cd** and **ls** are particularly useful.
 
+If you'd like to see a working version of this app, check out https://elijah-demo-app.netlify.app/
+
 ## Pre-set up
 
 If this is your first time working with code, you may need to first install a few other things to get started. If you've done dev work in the past, you might have already installed these.
