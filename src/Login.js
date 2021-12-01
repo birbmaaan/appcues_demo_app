@@ -1,5 +1,5 @@
 import React from "react";
-import AppcuesIdentifier from "./appcues_components/Identifier";
+import AppcuesIdentifier from "./appcuesComponents/Identifier";
 
 /* 
   feel free to add/remove any HTML you would like. Just remember that all content

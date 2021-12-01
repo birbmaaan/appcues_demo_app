@@ -7,7 +7,7 @@ import Contact from "./Contact";
 import Navigation from "./Navigation";
 import Login from "./Login";
 import Settings from "./Settings";
-import Toolbar from "./appcues_components/Toolbar";
+import Toolbar from "./appcuesComponents/Toolbar";
 
 /* 
 This component is wrapped around all the path changes in the app, which then

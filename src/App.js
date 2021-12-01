@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter} from "react-router-dom";
-import { logEvents } from "./appcues_components/EventLog";
+import { logEvents } from "./appcuesComponents/EventLog";
 import AppcuesRouter from "./Appcues";
 
 /*

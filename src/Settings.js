@@ -1,5 +1,5 @@
 import React from "react";
-import SetProperties from "./appcues_components/SetProperties";
+import SetProperties from "./appcuesComponents/SetProperties";
 
 /* 
   feel free to add/remove any HTML you would like. Just remember that all content
