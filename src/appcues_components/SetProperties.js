@@ -25,8 +25,8 @@ const SetProperties = () => {
       <p>If you'd like to set a custom signup date, enter below. Make sure you use a UNIX timestamp. 
         <br/>
         <a href="https://www.epochconverter.com/">Epoch Converter</a> can help you generate one.</p>
-      <input id="set-timestamp" type="text"/>
-      <button onClick={setCustomTime}>Set custom signup date</button>
+      <input placeholder="1234567890" id="set-timestamp" type="text"/>
+      <button onClick={setCustomTime}>Set Custom Signup Date</button>
     </div>
   )
 }
