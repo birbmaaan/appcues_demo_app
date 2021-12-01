@@ -1,6 +1,6 @@
 # Directions for using this demo app
 
-In order to work with this app, you'll do most of your work from your computer's terminal. If you're unfamiliar with the terminal, [this article](https://itconnect.uw.edu/learn/workshops/online-tutorials/web-publishing/what-is-a-terminal/) gives a quick rundown. For basic terminal commands, check out [This Tech Republic article](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/). cd and ls are particularly useful.
+In order to work with this app, you'll do most of your work from your computer's terminal. If you're unfamiliar with the terminal, [this article](https://itconnect.uw.edu/learn/workshops/online-tutorials/web-publishing/what-is-a-terminal/) gives a quick rundown. For basic terminal commands, check out [this Tech Republic article](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/). The commands **cd** and **ls** are particularly useful.
 
 ## Pre-set up
 
@@ -16,7 +16,7 @@ If using Mac, I recommend first making sure [`Homebrew`](https://brew.sh/) has b
 
 Git is an open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. If you're interested in learning more about it, check out [What is Git](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F). You're welcome to use an alternative to Git and Github if you prefer, but here's how to get started with Git.
 
-Open your computer terminal and install Git. With Homebrew installed, you can do this with the termanal command `brew install git`. You can check if you already have Git installed with the command `git version`. For more detailed install instructions, check out [Github's documentation](https://github.com/git-guides/install-git). 
+Open your computer terminal and install Git. With Homebrew installed, you can do this with the terminal command `brew install git`. You can check if you already have Git installed with the command `git version`. For more detailed install instructions, check out [Github's documentation](https://github.com/git-guides/install-git). 
 
 You'll also want to make sure to register for an account on [Github](https://github.com/).
 
@@ -24,7 +24,7 @@ You'll also want to make sure to register for an account on [Github](https://git
 
 Node.js is a big beautiful thing, and if you're interested, check out [their about page](https://nodejs.org/en/about/). For the purposes of this project, we're mainly interested in [npm](https://en.wikipedia.org/wiki/Npm_(software)), which is a package manager that generally comes bundled with Node.js.
 
-Install Node.js with the command `brew install node`. This will also install npm. If you do this, I recommend installing the most up-to-date stable version of Node by typing `brew install node@version_number`. [Node's website](https://nodejs.org/en/) will tell you which version is the latest stable version.
+Install Node.js with the command `brew install node`. This will also install npm. If you follow this method, I recommend installing the most up-to-date stable version of Node by typing `brew install node@version_number`. [Node's website](https://nodejs.org/en/) will tell you which version is the latest stable version.
 
 ### 4. VSCode
 
@@ -59,7 +59,7 @@ account ID.
 
 ### 2. Set user ID 
 
-In `App.js`, replace the "testUser" ID if you'd like, and add in any other user properties you would like sent into Appcues. Because this demo app does not have a backend with a database, whenever you refresh the page in your app, the identified user will fall back to whatever value is entered here.
+In `App.js`, on the line of code `window.localStorage.setItem("currentUser", "testUser")`, replace the "testUser" ID to a different value if you'd like. This is the fallback ID that will be used the first time you load the app, as well as anytime you click the Appcues.reset() button in the toolbar. You can also add in any other user properties you would like sent into Appcues into the Appcues.identify() call in this file.
 
 ### 3. Personalize app content
 
@@ -82,7 +82,7 @@ Following the [directions](https://docs.github.com/en/get-started/quickstart/cre
 
 If you receive `error: remote origin already exists.`, you'll first need to change the origin by running the command `git remote set-url origin <remote_url>`. The remote_url should be your Github repository URL.
 
-When you visit your repo page in Github, you should now see all your files present. Whenever you make any changes to the files now, you'll want to make sure to push all these changes to the Github-hosted version so they match up. The 3 basic commands you'll want to use are:
+When you visit your repo page in Github, you should now see all your files present. Whenever you make any changes to the files, you'll want to make sure to push all these changes to the Github-hosted version so they match up. The 3 basic commands you'll want to use are:
 
 ### 1. `git add .` 
 
