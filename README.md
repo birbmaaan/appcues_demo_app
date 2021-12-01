@@ -69,10 +69,9 @@ Feel free to add any additional HTML you would like. This should mostly be done 
 
 ### 4. Add CSS
 
-### 4. 
 The app's CSS lives in `index.css` and can be changed as you please. 
 
-Note: I recommend leaving alone the files in the `appcues_components` folder, as these are what are used for making calls to the Appcues javascript API and running the event log.
+Note: I recommend leaving alone the files in the `appcuesComponents` folder, as these are what are used for making calls to the Appcues javascript API and running the event log.
 
 ## Push project to Github
 
