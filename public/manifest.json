@@ -1,6 +1,6 @@
 {
-  "short_name": "Elijah Demo App",
-  "name": "Elijah's Appcues demo app for testing purposes",
+  "short_name": "Appcues Demo App",
+  "name": "A basic Appcues demo app for testing purposes",
   "icons": [
     {
       "src": "favicon.ico",
