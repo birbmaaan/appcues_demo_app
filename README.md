@@ -1,6 +1,6 @@
 # Directions for using this demo app
 
-In order to work with this app, you'll do most of your work from your computer's terminal. If you're unfamiliar with the terminal, [this article](https://itconnect.uw.edu/learn/workshops/online-tutorials/web-publishing/what-is-a-terminal/) gives a quick rundown. For basic terminal commands, check out [this Tech Republic article](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/). The commands **cd** and **ls** are particularly useful.
+In order to work with this app, you'll do most of your work from your computer's terminal. If you're unfamiliar with the terminal, [this article](https://itconnect.uw.edu/learn/workshops/online-tutorials/web-publishing/what-is-a-terminal/) gives a quick rundown. For basic terminal commands, check out [this Tech Republic article](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/). The commands **cd**, **pwd**, and **ls** are particularly useful.
 
 If you'd like to see a working version of this app, check out https://elijah-demo-app.netlify.app/
 
@@ -26,21 +26,37 @@ You'll also want to make sure to register for an account on [Github](https://git
 
 Node.js is a big beautiful thing, and if you're interested, check out [their about page](https://nodejs.org/en/about/). For the purposes of this project, we're mainly interested in [npm](https://en.wikipedia.org/wiki/Npm_(software)), which is a package manager that generally comes bundled with Node.js.
 
-Install Node.js with the command `brew install node`. This will also install npm. If you follow this method, I recommend installing the most up-to-date stable version of Node by typing `brew install node@version_number`. [Node's website](https://nodejs.org/en/) will tell you which version is the latest stable version.
+Install Node.js with the command `brew install node` or `brew install node@version_number` (recommended). This will also install npm. The first will install the latest released version of node, while the second will allow you to install whichever version you'd like. I recommend installing the most up-to-date stable version of Node, which you can find on [Node's website](https://nodejs.org/en/).
 
 ### 4. VSCode
 
-[Virtual Studio Code](https://code.visualstudio.com/) is a powerful code editor with a ton of functionality. This allows you to open up all your code files and make edits as you please. There are a lot of other great code editors like [Atom](https://atom.io/) or [Sublime Text](http://www.sublimetext.com/), so feel free to use whatever suits your fancy. 
+[Visual Studio Code](https://code.visualstudio.com/) is a powerful code editor with a ton of functionality. This allows you to open up all your code files and make edits as you please. There are a lot of other great code editors like [Atom](https://atom.io/) or [Sublime Text](http://www.sublimetext.com/), so feel free to use whatever suits your fancy. 
 
 ## App set up
 
 Now that you've installed the above, it's time to get your demo app up and running!
+
+### 0. Learn how to navigate around the terminal
+
+For making any 
+
+To go up a level: `cd ..`
+
+To go down a level: `cd <folder-name>`
+
+To go down several levels: `cd folder1/sub-folder/sub-sub-folder`
+
+To see your current locatioon: `pwd`
+
+To see the contents of your current location: `ls`
 
 ### 1. Clone this repo
 
 In the terminal, navigate to the folder where you'd like to save your project and then clone this project repository to your computer using the `git clone` command. For directions on how to use this command, check out [this article](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
 ### 2. Install dependencies
+
+# open in the right place, how to open in vs code, open in 
 
 Run `npm install` to install other project dependencies.
 
@@ -54,20 +70,23 @@ And that's it! You've now got a locally hosted working app. Any changes you make
 
 ## Personalize app
 
-### 1. Set Appcues account ID
+### 1. Open your app in your code editor
 
-In the `index.html` file, replace {account_id} with your Appcues 
-account ID.
 
-### 2. Set user ID 
+
+### 2. Set Appcues account ID
+
+In the `index.html` file, replace {account_id} with your Appcues account ID.
+
+### 3. Set user ID (optional)
 
 In `App.js`, on the line of code `window.localStorage.setItem("currentUser", "testUser")`, replace the "testUser" ID to a different value if you'd like. This is the fallback ID that will be used the first time you load the app, as well as anytime you click the Appcues.reset() button in the toolbar. You can also add in any other user properties you would like sent into Appcues into the Appcues.identify() call in this file.
 
-### 3. Personalize app content
+### 4. Personalize app content (optional)
 
 Feel free to add any additional HTML you would like. This should mostly be done with HTML added into the `return` section of any component. You can add in anything like photos, iFrames, lists, etc. You can also create entirely new components if you're feeling adventurous.
 
-### 4. Add CSS
+### 5. Add CSS (optional)
 
 The app's CSS lives in `index.css` and can be changed as you please. 
 
@@ -80,9 +99,17 @@ You now have a working app, but it's currently only on your machine. Next you'll
 When working in the terminal, you'll want to make sure you're in your demo project folder. If you're running a local server for local host, I recommend opening a second terminal for pushing changes to Github.
 
 ### Create your Github repository
-Following the [directions](https://docs.github.com/en/get-started/quickstart/create-a-repo) on Github, create a new repository to hold your demo app's files. You don't need to create a new README or gitignore. You'll want to follow the steps for pushing an existing repository from the command line.
 
-If you receive `error: remote origin already exists.`, you'll first need to change the origin by running the command `git remote set-url origin <remote_url>`. The remote_url should be your Github repository URL.
+#### change this to only use change origin,  say it's an empty repo
+Following the [directions](https://docs.github.com/en/get-started/quickstart/create-a-repo) on Github, create a new repository to hold your demo app's files. You don't need to create a new README, gitignore, or license. You'll want to follow the steps for pushing an existing repository from the command line, with one small change:
+
+`git remote set-url origin <repo_url>` instead of `git remote add origin <repo_url>`
+`git branch -M main`
+`git push -u origin main`
+
+The first time you try to push code from your computer to Github, you will need to verify your Github credentials. In the terminal, it will ask for first your username, and then your password. Your username is straightforward enough. 
+
+Earlier this year, however, Github changed its verification requirements from password to token-based (check out [this article](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/) if you're interested in reading more about it). Long-story short, instead of using your password here, you will first need to generate a personal access token following [these directions](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/). Once you have your token, paste it into the password field prompt in your terminal. Note that the characters entered into this field are invisible.
 
 When you visit your repo page in Github, you should now see all your files present. Whenever you make any changes to the files, you'll want to make sure to push all these changes to the Github-hosted version so they match up. The 3 basic commands you'll want to use are:
 
