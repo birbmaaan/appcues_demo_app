@@ -38,7 +38,7 @@ Now that you've installed the above, it's time to get your demo app up and runni
 
 ### 1. Clone this repo
 
-In the terminal, navigate to the folder where you'd like to save your project and then clone this project repository to your computer using the [`git clone`](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) command.
+In the terminal, navigate to the folder where you'd like to save your project and then clone this project repository to your computer using the `git clone` command. For directions on how to use this command, check out [this article](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
 ### 2. Install dependencies
 
