@@ -40,6 +40,8 @@ Now that you've installed the above, it's time to get your demo app up and runni
 
 Whenever you're trying to work on a project, you need to make sure you're in the correct location inside the terminal. When you open up a fresh instance of a terminal, by default it opens to your current user's root directory. 
 
+**A word of caution: the terminal makes the assumption that you know what you're doing and you mean anything that you type into it. If you tell it to delete a file, it won't ask if you're sure. This means it's possible to seriously break things in your computer if you're not careful. That said, the following terminal commands are all mostly harmless.**
+
 To open a terminal, open your Spotlight Search and type `terminal` or select it from your list of applications. 
 
 ![spotlight search](./readme_pics/spotlightsearch.png)
@@ -84,7 +86,7 @@ If you ever forget where you are, **p**rint **w**orking **d**irectory!
 
 Generally the first thing I do after changing directory is **l**i**s**t the files so I can see what's there.
 
-Alternately, if you want to simply open your terminal to the correct path right away, rightt click on the project folder and select `new Terminal at Folder`.
+Alternately, if you want to simply open your terminal to the correct path right away, right click on the project folder and select `new Terminal at Folder`.
 
 ![open terminal from menu](./readme_pics/terminalmenu.png)
 
@@ -114,9 +116,9 @@ Run `npm install` to install other project dependencies.
 
 ### 3. Start local server
 
-Run `npm start` to begin a local development server. Once this starts, you should be able to see a live preview of your app running in your browser at `localhost:3000`*.
+Run `npm start` to begin a local development server. Once this starts, you should be able to see a live preview of your app running in your browser at `localhost:3000`[^1].
 
-* Note: you will first need to install Appcues using your account ID in the second step below.
+[^1] Note: you will first need to install Appcues using your account ID in the second step below.
 
 And that's it! You've now got a locally hosted working app. Any changes you make in your code files should automatically appear in the local version of your demo app.
 
@@ -130,7 +132,7 @@ If using VSCode:
 
 ![open file](./readme_pics/readmepic2.png)
 
-2. Choose your project folder and open the entire thing. This will open all the project files in VSCode. You will see all of them listed in the left side of the editor.
+2. Choose your project folder and open the entire thing. This will open all the project files in VSCode. You will see all of them listed in the left side of the editor. You can even read these directions there by opening the README.
 
 ![select folder](./readme_pics/readmepic1.png)
 
