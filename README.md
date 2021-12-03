@@ -120,7 +120,7 @@ Run `npm start` to begin a local development server. Once this starts, you shoul
 
 **Note you will first need to install Appcues using your account ID in the second step below.**
 
-And that's it! You've now got a locally hosted working app. Any changes you make in your code files should automatically appear in the local version of your demo app.
+And that's it! You've now got a locally hosted working app. Any changes you make in your code files should automatically appear in the local version of your demo app once the changed file has been saved.
 
 ## Personalize app
 
