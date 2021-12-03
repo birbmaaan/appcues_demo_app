@@ -72,23 +72,48 @@ And that's it! You've now got a locally hosted working app. Any changes you make
 
 ### 1. Open your app in your code editor
 
+If using VSCode:
 
+1. In the Get Started tab in VSCode, select **Open**.
+
+![open file](./readme_pics/readmepic2.png)
+
+2. Choose your project folder and open the entire thing. This will open all the project files in VSCode. You will see all of them listed in the left side of the editor.
+
+![select folder](./readme_pics/readmepic1.png)
+
+![file tree](./readme_pics/readmepic3.png)
 
 ### 2. Set Appcues account ID
 
-In the `index.html` file, replace {account_id} with your Appcues account ID.
+1. Click the `public > index.html` file. This will display the contents of the file for editing. Replace {account_id} in the Appcues snippet with your Appcues account ID.
+
+![Appcues snippet](./readme_pics/snippet.png)
 
 ### 3. Set user ID (optional)
 
-In `App.js`, on the line of code `window.localStorage.setItem("currentUser", "testUser")`, replace the "testUser" ID to a different value if you'd like. This is the fallback ID that will be used the first time you load the app, as well as anytime you click the Appcues.reset() button in the toolbar. You can also add in any other user properties you would like sent into Appcues into the Appcues.identify() call in this file.
+1. In `src > App.js`, on the line of code `window.localStorage.setItem("currentUser", "testUser")`, replace the "testUser" ID to a different value if you'd like. This is the fallback ID that will be used the first time you load the app, as well as anytime you click the Appcues.reset() button in the toolbar. 
+
+![user_id](./readme_pics/user_id.png)
+
+2. You can also add in any other user properties you would like sent into Appcues into the Appcues.identify() call in this file. By default, this currently includes two properties: role and signupDate (a date property).
+
+![identify](./readme_pics/identify.png)
 
 ### 4. Personalize app content (optional)
 
 Feel free to add any additional HTML you would like. This should mostly be done with HTML added into the `return` section of any component. You can add in anything like photos, iFrames, lists, etc. You can also create entirely new components if you're feeling adventurous.
 
+Everything in the return section should be wrapped inside a single element. In this example, everything is wrapped by the div with the class of **app-content**.
+
+![component return](./readme_pics/componentreturn.png)
+
 ### 5. Add CSS (optional)
 
-The app's CSS lives in `index.css` and can be changed as you please. 
+The app's CSS lives in `src > index.css` and can be changed as you please. 
+
+![the app's CSS](./readme_pics/cssfile.png)
+
 
 Note: I recommend leaving alone the files in the `appcuesComponents` folder, as these are what are used for making calls to the Appcues javascript API and running the event log.
 
@@ -110,7 +135,6 @@ Following the [directions](https://docs.github.com/en/get-started/quickstart/cre
 The first time you try to push code from your computer to Github, you will need to verify your Github credentials. In the terminal, it will ask for first your username, and then your password. Your username is straightforward enough. 
 
 Earlier this year, however, Github changed its verification requirements from password to token-based (check out [this article](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/) if you're interested in reading more about it). Long-story short, instead of using your password here, you will first need to generate a personal access token following [these directions](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/). Once you have your token, paste it into the password field prompt in your terminal. Note that the characters entered into this field are invisible.
-
 When you visit your repo page in Github, you should now see all your files present. Whenever you make any changes to the files, you'll want to make sure to push all these changes to the Github-hosted version so they match up. The 3 basic commands you'll want to use are:
 
 ### 1. `git add .` 
