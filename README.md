@@ -50,35 +50,35 @@ Type `pwd` to see what your current path is.
 
 Terminal commands:
 
-- Return to your root directory: `cd`
+- **Return to your root directory: `cd`**
 
 The **c**hange **d**irectory command, by itself, returns you to `Users/username`. Very useful if you get navigate super deep into a file tree.
 
-- Go up a level: `cd ..`
+- **Go up a level: `cd ..`**
 
 If you're at `Users/username/desktop/project`, change directory to `Users/username/desktop`.
 
-- Go up 2 levels: `cd ../..`
+- **Go up 2 levels: `cd ../..`**
 
 If you're at `Users/username/desktop/project`, change directory to `Users/username`.
 
-- Go up 3 levels: `cd ../../..`
+- **Go up 3 levels: `cd ../../..`**
 
 If you're at `Users/username/desktop/project`, change directory to `Users`.
 
-- Go down a level: `cd <folder-name>`
+- **Go down a level: `cd <folder-name>`**
 
 If you're at `Users/username`, `cd desktop` will change directory to `Users/username/desktop`.
 
-- Go down 2 levels: `cd folder1/sub-folder/`
+- **Go down 2 levels: `cd folder1/sub-folder/`**
 
 If you're at `Users/username`, `cd desktop/project` will change directory to `Users/username/desktop/project`.
 
-- See your current location: `pwd`
+- **See your current location: `pwd`**
 
 If you ever forget where you are, **p**rint **w**orking **d**irectory!
 
-- See contents at your current location: `ls`
+- **See contents at your current location: `ls`**
 
 Generally the first thing I do after changing directory is **l**i**s**t the files so I can see what's there.
 
