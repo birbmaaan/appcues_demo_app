@@ -48,7 +48,9 @@ Type `pwd` to see what your current path is.
 
 ![root path](./readme_pics/pwd.png)
 
-Terminal commands:
+---
+
+#### Terminal commands:
 
 - **Return to your root directory: `cd`**
 
@@ -90,21 +92,31 @@ In the new terminal that opens, you can type `pwd` to see where in your computer
 
 ![my project's path](./readme_pics/projectpath.png)
 
+---
+
+**Whenever you're running any of the below commands, it is assumed your terminal's working directory is the folder where your project is located unless stated otherwise**
+
+Now that you know some basics of terminal use, it's time to actually get started with your project! 
+
 ### 1. Clone this repo
 
 In the terminal, navigate to the folder where you'd like to save your project and then clone this project repository to your computer using the `git clone` command. For directions on how to use this command, check out [this article](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
-### 2. Install dependencies
+For example, if you'd like to create a project folder on your desktop, you would want your working directory in the terminal to be `Users/username/desktop`. Then, when cloning this repository to your machine, it will create a new folder on your desktop titled `appcues_demo_app`.
 
-# open in the right place, how to open in vs code, open in 
+After cloning the repo, you can then change directory with `cd appcues_demo_app`.
+
+Following this example, if you print your working directory, you should now be located at `Users/username/desktop/appcues_demo_app`.
+
+### 2. Install dependencies
 
 Run `npm install` to install other project dependencies.
 
 ### 3. Start local server
 
-Run `npm start` to begin a local development server. Once this starts, you should be able to see a live preview of your app running in your browser at `localhost:3000`. 
+Run `npm start` to begin a local development server. Once this starts, you should be able to see a live preview of your app running in your browser at `localhost:3000`*.
 
-Note: you will first need to install Appcues using your account ID in the first step below.
+* Note: you will first need to install Appcues using your account ID in the second step below.
 
 And that's it! You've now got a locally hosted working app. Any changes you make in your code files should automatically appear in the local version of your demo app.
 
@@ -126,7 +138,7 @@ If using VSCode:
 
 ### 2. Set Appcues account ID
 
-1. Click the `public > index.html` file. This will display the contents of the file for editing. Replace {account_id} in the Appcues snippet with your Appcues account ID.
+1. Click the `public > index.html` file. This will display the contents of the file for editing. Replace {account_id} in the Appcues snippet with your Appcues account ID. Make sure you save the changes with `CMND + S`. 
 
 ![Appcues snippet](./readme_pics/snippet.png)
 
