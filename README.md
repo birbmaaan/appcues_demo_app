@@ -70,7 +70,11 @@ If you're at `Users/username/desktop/project`, change directory to `Users`.
 
 If you're at `Users/username`, `cd desktop` will change directory to `Users/username/desktop`.
 
+<<<<<<< HEAD
 - **Go down 2 levels: `cd folder1/sub-folder/`**
+=======
+- Go down 2 levels: `cd <folder-name>/<sub-folder>/`
+>>>>>>> 8856f142abeab92594e7be260755bed9d92beb0f
 
 If you're at `Users/username`, `cd desktop/project` will change directory to `Users/username/desktop/project`.
 
