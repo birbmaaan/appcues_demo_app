@@ -54,7 +54,7 @@ Type `pwd` to see what your current path is.
 
 - **Return to your root directory: `cd`**
 
-The **c**hange **d**irectory command, by itself, returns you to `Users/username`. Very useful if you get navigate super deep into a file tree.
+The **c**hange **d**irectory command, by itself, returns you to `Users/username`. Very useful if you navigate deep into a file tree.
 
 - **Go up a level: `cd ..`**
 
