@@ -116,9 +116,9 @@ Run `npm install` to install other project dependencies.
 
 ### 3. Start local server
 
-Run `npm start` to begin a local development server. Once this starts, you should be able to see a live preview of your app running in your browser at `localhost:3000`[^1].
+Run `npm start` to begin a local development server. Once this starts, you should be able to see a live preview of your app running in your browser at `localhost:3000`. [^1]
 
-[^1] Note: you will first need to install Appcues using your account ID in the second step below.
+[^1]: you will first need to install Appcues using your account ID in the second step below.
 
 And that's it! You've now got a locally hosted working app. Any changes you make in your code files should automatically appear in the local version of your demo app.
 
