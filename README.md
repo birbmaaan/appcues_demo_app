@@ -1,5 +1,9 @@
 # Directions for using this demo app
 
+This is a demo app with some basic SPA functionality and with Appcues installed. It's built using create-react-app, and is frontend only, so is not the best option for testing anything that requires a backend or database work. 
+
+The idea behind it is to have a personal sandbox environment where you can publish any Appcues content you'd like without having to worry about stepping on anyone else's toes. Not quite sure how a checklist will behave? Publish it here and play around with it. Want to make some click-to-track events and use them for event triggering? Here you go! Want to try installing some integrations? This is the place!
+
 In order to work with this app, you'll do most of your work from your computer's terminal. If you're unfamiliar with the terminal, [this article](https://itconnect.uw.edu/learn/workshops/online-tutorials/web-publishing/what-is-a-terminal/) gives a quick rundown. For basic terminal commands, check out [this Tech Republic article](https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/). The commands **cd**, **pwd**, and **ls** are particularly useful.
 
 If you'd like to see a working version of this app, check out https://elijah-demo-app.netlify.app/
