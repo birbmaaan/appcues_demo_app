@@ -1,4 +1,9 @@
-* { /* remove all default margins and padding */
+/* 
+This is the style sheet! 
+Add any styling here that you would like 
+*/
+
+* { /* remove all default margins and padding from different browsers*/
   margin: 0;
   padding: 0;
 }
