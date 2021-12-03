@@ -150,7 +150,7 @@ If using VSCode:
 
 ![user_id](./readme_pics/user_id.png)
 
-2. You can also add in any other user properties you would like sent into Appcues into the Appcues.identify() call in this file. By default, this currently includes two properties: role and signupDate (a date property).
+2. You can also add in any other user properties you would like sent into Appcues into the Appcues.identify() call in this file. By default, this currently includes two properties: `role` and `signupDate` (a UNIX timestamp date property).
 
 ![identify](./readme_pics/identify.png)
 
@@ -158,7 +158,7 @@ If using VSCode:
 
 Feel free to add any additional HTML you would like. This should mostly be done with HTML added into the `return` section of any component. You can add in anything like photos, iFrames, lists, etc. You can also create entirely new components if you're feeling adventurous.
 
-Everything in the return section should be wrapped inside a single element. In this example, everything is wrapped by the div with the class of **app-content**.
+Everything in the return section should be wrapped inside a single element. In this example, everything is wrapped by the div with the class of `app-content`.
 
 ![component return](./readme_pics/componentreturn.png)
 
@@ -175,20 +175,20 @@ Note: I recommend leaving alone the files in the `appcuesComponents` folder, as 
 
 You now have a working app, but it's currently only on your machine. Next you'll want to push the code to Github.
 
-When working in the terminal, you'll want to make sure you're in your demo project folder. If you're running a local server for local host, I recommend opening a second terminal for pushing changes to Github.
+Remember that when working with your project in the terminal, you'll want to make sure your working directtory is your project folder. If you're running a local server for local host, I recommend opening a second terminal for then pushing changes to Github.
 
 ### Create your Github repository
 
-#### change this to only use change origin,  say it's an empty repo
 Following the [directions](https://docs.github.com/en/get-started/quickstart/create-a-repo) on Github, create a new repository to hold your demo app's files. You don't need to create a new README, gitignore, or license. You'll want to follow the steps for pushing an existing repository from the command line, with one small change:
 
-`git remote set-url origin <repo_url>` instead of `git remote add origin <repo_url>`
-`git branch -M main`
-`git push -u origin main`
+- `git remote set-url origin <repo_url>` instead of `git remote add origin <repo_url>`
+- `git branch -M main`
+- `git push -u origin main`
 
 The first time you try to push code from your computer to Github, you will need to verify your Github credentials. In the terminal, it will ask for first your username, and then your password. Your username is straightforward enough. 
 
 Earlier this year, however, Github changed its verification requirements from password to token-based (check out [this article](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/) if you're interested in reading more about it). Long-story short, instead of using your password here, you will first need to generate a personal access token following [these directions](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/). Once you have your token, paste it into the password field prompt in your terminal. Note that the characters entered into this field are invisible.
+
 When you visit your repo page in Github, you should now see all your files present. Whenever you make any changes to the files, you'll want to make sure to push all these changes to the Github-hosted version so they match up. The 3 basic commands you'll want to use are:
 
 ### 1. `git add .` 
@@ -197,7 +197,11 @@ This will add any file that has been changed to your staging area.
 
 ### 2. `git commit -m "<message here>"` 
 
-This commits the changes, sort of like a quick save. The message you enter will appear in Github. It's common practice to write these comments in short imperatives like "add login functionality" to give you a quick description of what changes you made. These comments will appear in Github. You can commit as many times as you want before pushing your code changes. It's a good rule to commit early and often. 
+This commits the changes, sort of like a quick save. It's common practice to write these comments in short imperatives like "add login functionality" to give you a quick description of what changes you made. Here's an example of what a commit might look like:
+
+`git commit -m "add Captain Cues to the About page"`
+
+These comments will appear on the files in Github. You can commit as many times as you want before pushing your code changes. It's a good rule to commit early and often. 
 
 ### 3. `git push origin main` 
 
