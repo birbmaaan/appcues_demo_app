@@ -38,17 +38,57 @@ Now that you've installed the above, it's time to get your demo app up and runni
 
 ### 0. Learn how to navigate around the terminal
 
-For making any 
+Whenever you're trying to work on a project, you need to make sure you're in the correct location inside the terminal. When you open up a fresh instance of a terminal, by default it opens to your current user's root directory. 
 
-To go up a level: `cd ..`
+To open a terminal, open your Spotlight Search and type `terminal` or select it from your list of applications. 
 
-To go down a level: `cd <folder-name>`
+![spotlight search](./readme_pics/spotlightsearch.png)
 
-To go down several levels: `cd folder1/sub-folder/sub-sub-folder`
+Type `pwd` to see what your current path is.
 
-To see your current locatioon: `pwd`
+![root path](./readme_pics/pwd.png)
 
-To see the contents of your current location: `ls`
+Terminal commands:
+
+- Return to your root directory: `cd`
+
+The **c**hange **d**irectory command, by itself, returns you to `Users/username`. Very useful if you get navigate super deep into a file tree.
+
+- Go up a level: `cd ..`
+
+If you're at `Users/username/desktop/project`, change directory to `Users/username/desktop`.
+
+- Go up 2 levels: `cd ../..`
+
+If you're at `Users/username/desktop/project`, change directory to `Users/username`.
+
+- Go up 3 levels: `cd ../../..`
+
+If you're at `Users/username/desktop/project`, change directory to `Users`.
+
+- Go down a level: `cd <folder-name>`
+
+If you're at `Users/username`, `cd desktop` will change directory to `Users/username/desktop`.
+
+- Go down 2 levels: `cd folder1/sub-folder/`
+
+If you're at `Users/username`, `cd desktop/project` will change directory to `Users/username/desktop/project`.
+
+- See your current location: `pwd`
+
+If you ever forget where you are, **p**rint **w**orking **d**irectory!
+
+- See contents at your current location: `ls`
+
+Generally the first thing I do after changing directory is **l**i**s**t the files so I can see what's there.
+
+Alternately, if you want to simply open your terminal to the correct path right away, rightt click on the project folder and select `new Terminal at Folder`.
+
+![open terminal from menu](./readme_pics/terminalmenu.png)
+
+In the new terminal that opens, you can type `pwd` to see where in your computer you're located. It will look something like this:
+
+![my project's path](./readme_pics/projectpath.png)
 
 ### 1. Clone this repo
 
