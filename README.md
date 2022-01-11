@@ -144,7 +144,7 @@ If using VSCode:
 
 ### 2. Set Appcues account ID
 
-1. Click the `public > index.html` file. This will display the contents of the file for editing. Replace {account_id} in the Appcues snippet with your Appcues account ID. Make sure you save the changes with `CMND + S`. 
+1. Click the `public > index.html` file. This will display the contents of the file for editing. Replace {account_id} in the Appcues snippet with your Appcues account ID. For example, if your Appcues account ID is 12345, your Appcues snippet will be **//fast.appcues.com/12345.js**. Be sure to remove the curly brackets! And then make sure you save the changes with `CMND + S`. 
 
 ![Appcues snippet](./readme_pics/snippet.png)
 
