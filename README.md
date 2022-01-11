@@ -16,7 +16,13 @@ What you need:
 
 ### 1. Homebrew
 
-If using Mac, I recommend first making sure [Homebrew](https://brew.sh/) has been installed on your machine. You can check whether or not it's installed by typing `which brew` in your terminal. If it's installed, it should give you a local path that points to where it's been installed, something like `/usr/local/bin/brew`.
+[Homebrew](https://brew.sh/) is a free and open-source software package management system that simplifies the installation of software on Apple's operating system, macOS, as well as Linux. You can think of it a bit like an app store that you can access from your computer's terminal. If using Mac, I recommend first making sure it has been installed on your machine. You can check whether or not it's installed by typing `which brew` in your terminal. If it's installed, it should give you a local path that points to where it's been installed, something like `/usr/local/bin/brew`.
+
+If you haven't installed it yet, you can follow the instructions on the Homebrew website. When installing, your computer will likely ask for a password. This should be the same as the password you use for logging in to your computer. Make sure to follow all the instructions that Homebrew gives you during the installation process, including following the next steps, which asks you to run two additional commands to add Homebrew to your PATH. These commands will look something like the following:
+```
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/username/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
 
 ### 2. Git
 
@@ -183,7 +189,7 @@ Remember that when working with your project in the terminal, you'll want to mak
 
 ### Create your Github repository
 
-Following the [directions](https://docs.github.com/en/get-started/quickstart/create-a-repo) on Github, create a new repository to hold your demo app's files. You don't need to create a new README, gitignore, or license. You'll want to follow the steps for pushing an existing repository from the command line, with one small change:
+Following the [directions](https://docs.github.com/en/get-started/quickstart/create-a-repo) on Github, create a new repository to hold your demo app's files. You don't need to create a new README, gitignore, or license. Once you click the button to create the repository, you will then be redirected to another page with a few steps for uploading code to the repo. You'll want to follow the steps for pushing an existing repository from the command line, with one small change:
 
 - `git remote set-url origin <repo_url>` instead of `git remote add origin <repo_url>`
 - `git branch -M main`
@@ -223,6 +229,6 @@ Now that your app is saved on Github, the last step is to host it somewhere so t
 
 1. Create an account at [Netlify](https://www.netlify.com/).
 
-2. Follow the steps in [this article](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/).
+2. Follow the steps in [this article](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/). Once your site is deployed, you don't need to set up a custom domain unless you want a URL without netlify in the domain. If you'd like to personalize your domain, you can click `Domain settings`, and then select `Options > Edit site name` on the right. 
 
 3. You should now have a working demo app with Appcues installed!
