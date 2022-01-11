@@ -229,6 +229,6 @@ Now that your app is saved on Github, the last step is to host it somewhere so t
 
 1. Create an account at [Netlify](https://www.netlify.com/).
 
-2. Follow the steps in [this article](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/). Once your site is deployed, you don't need to set up a custom domain unless you want a URL without netlify in the domain. If you'd like to personalize your domain, you can click `Domain settings`, and then select `Options > Edit site name` on the right. 
+2. Follow the steps in [this article](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/). Once your site is deployed, you don't need to set up a custom domain unless you want a URL without netlify in the domain. If you'd like to personalize your domain, you can click `Domain settings`, and then select `Options > Edit site name` in the custom domains section. 
 
 3. You should now have a working demo app with Appcues installed!
