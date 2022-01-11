@@ -106,7 +106,7 @@ In the new terminal that opens, you can type `pwd` to see where in your computer
 
 ---
 
-**Whenever you're running any of the below commands, it is assumed your terminal's working directory is the folder where your project is located unless stated otherwise**
+**Whenever you're running any of the below commands, it is assumed your terminal's working directory is the folder where your project is located unless stated otherwise.**
 
 Now that you know some basics of terminal use, it's time to actually get started with your project! 
 
@@ -185,7 +185,7 @@ Note: I recommend leaving alone the files in the `appcuesComponents` folder, as 
 
 You now have a working app, but it's currently only on your machine. Next you'll want to push the code to Github.
 
-Remember that when working with your project in the terminal, you'll want to make sure your working directtory is your project folder. If you're running a local server for local host, I recommend opening a second terminal for then pushing changes to Github.
+Remember that when working with your project in the terminal, you'll want to make sure your working directory is your project folder. If you're running a local server for local host, I recommend opening a second terminal for then pushing changes to Github.
 
 ### Create your Github repository
 
